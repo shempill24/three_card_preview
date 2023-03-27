@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main{
+    display: flex;
+    height: 500px;
+}
+section{
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 40px;
+    max-width: 300px;
+}
+
+h1{
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 45px;
+    margin: 40px 0;
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+}
+button{
+    margin-top: 100px;
+    background-color: hsl(0, 0%, 95%);
+    border: solid 2px hsl(0, 0%, 95%);
+    width: 150px;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.orange button{
+    color: hsl(31, 77%, 52%);
+}
+.teal button{
+    color:hsl(184, 100%, 22%);
+}
+.forest button{
+    color:hsl(179, 100%, 13%);
+}
+button:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: unset;
+}
+.orange{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+
+}
+.teal{
+    background-color: hsl(184, 100%, 22%);
+
+}
+.forest{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+@media screen and (max-width:900px) {
+   body{
+       flex-direction: column;
+       height: unset;
+   }
+    main{
+       flex-direction: column;
+       height: unset;
+       margin-top: 20px;
+   }
+   section{
+       max-width: 90vw;
+   }
+   .orange{
+       border-radius: 10px 10px 0 0;
+   }
+   .forest{
+       border-radius: 0 0 10px 10px;
+   }
+}
